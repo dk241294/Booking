@@ -7519,3 +7519,66 @@ Created
  
 09:47:44.098 [main]  INFO  com.intuit.karate - [print] 2 
 09:47:44.426 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) 3.GetBookingIds.feature
+09:53:51.783 [main]  INFO  com.intuit.karate - Karate version: 1.5.0-SNAPSHOT
+09:53:51.952 [main]  DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:53:51.955 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1693801431953
+09:53:52.472 [main]  INFO  com.intuit.karate - >> lock acquired, begin callonce: read('1.HealthCheckup.feature')
+09:53:52.597 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://restful-booker.herokuapp.com/ping
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:53:53.717 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1116
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 7
+1 < Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+1 < Date: Mon, 04 Sep 2023 04:23:53 GMT
+1 < Via: 1.1 vegur
+Created
+
+09:53:53.728 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+09:53:53.741 [main]  INFO  com.intuit.karate - [print] response :  Created 
+09:53:53.742 [main]  INFO  com.intuit.karate - [print] Health Status code :  201 
+09:53:53.748 [main]  INFO  com.intuit.karate - [print] Service is UP !!! 201 
+09:53:53.756 [main]  INFO  com.intuit.karate - << lock released, cached callonce: read('1.HealthCheckup.feature')
+09:53:53.762 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://restful-booker.herokuapp.com/booking/578
+1 > Accept: application/json
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:53:54.568 [main]  DEBUG com.intuit.karate - response time in milliseconds: 804
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 165
+1 < Etag: W/"a5-aFLTvqSegl5VE0UtRMKu5nQInCg"
+1 < Date: Mon, 04 Sep 2023 04:23:54 GMT
+1 < Via: 1.1 vegur
+{"firstname":"John","lastname":"Smith","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Lunch"}
+
+09:53:54.580 [main]  INFO  com.intuit.karate - [print] Booking Details: {
+  "firstname": "John",
+  "lastname": "Smith",
+  "totalprice": 111,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2018-01-01",
+    "checkout": "2019-01-01"
+  },
+  "additionalneeds": "Lunch"
+}
+ 
+09:53:54.894 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) 4.GetSpecificUserDetails.feature
