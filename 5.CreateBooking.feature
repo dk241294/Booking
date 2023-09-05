@@ -13,7 +13,7 @@ Scenario: Create Booking
   And request
     """
     {
-      "firstname": "Jim",
+      "firstname": "Sally",
       "lastname": "Brown",
       "totalprice": 111,
       "depositpaid": true,
