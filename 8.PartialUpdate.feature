@@ -1,4 +1,4 @@
-Feature: Update Booking API
+Feature: Partially Updating Booking Detail
 
 Background:
     * def config = call read('classpath:karate-config.js')

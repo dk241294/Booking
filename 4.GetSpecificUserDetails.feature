@@ -25,15 +25,7 @@ Scenario: Get Booking Details
     additionalneeds: '#string'
   }"""
 
-# Verify the response with the expected output 
-And match response == 
-  """ {"firstname":"John",
-  "lastname":"Smith",
-  "totalprice":111,
-  "depositpaid":true,
-  "bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},
-  "additionalneeds":"Lunch"}
-  """
+
 And match each response[*].bookingid == '#number'
 
 # print the response

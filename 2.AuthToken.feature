@@ -1,4 +1,4 @@
-Feature: Authentication Token API
+Feature: Generating Authentication Token 
 
 Background:
   * def config = call read('classpath:karate-config.js')

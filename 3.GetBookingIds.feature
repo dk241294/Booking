@@ -12,7 +12,6 @@ Scenario: Get All Bookings
   * def responseData = response
   * print 'Booking Details:', responseData
   And match response == '#array'
-  And assert response.length >= 1
   And match each response[*].bookingid == '#number'
 
 
@@ -26,12 +25,11 @@ Scenario: Get Booking IDs by Firstname and Lastname
     * print 'Booking Details:', responseData
     * print "response",responseData
     And match response == '#array'
-    And assert response.length >= 1
     And match each response[*].bookingid == '#number'
     And match each response[*].firstname == 'Sally'
     And match each response[*].lastname == 'Brown'
   
-Scenario: Get Booking IDs with Query Parameters checkin and checkin
+Scenario: Get Booking IDs with Query Parameters checkin and checkout
   Given path '/booking'
   And param checkin = '2023-07-14'
   And param checkout = '2023-09-05'

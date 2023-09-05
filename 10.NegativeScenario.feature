@@ -89,7 +89,7 @@ Scenario: validate if date field format cannot be other than CCYY-MM-DD
     When method POST
     Then status 200
     * print 'Your data is invalid. Please check and try again.Date field should follow this format CCYY-MM-DD'
-
+    And match responseStatus == 400
 Scenario: validate if checkin date cannot be empty
     Given path '/booking'
     And request
@@ -144,5 +144,5 @@ Scenario: validate the response with empty request body
     When method POST
     Then status 500
     * print 'Your data is invalid. Please check and try again.firstname, totalprice and checkin field can\'t be empty'
-    
+    And match responseStatus == 400
     
