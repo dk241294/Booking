@@ -1,11 +1,15 @@
-# Booking
-API Automation using Karate Framework
+# Booking API Automation using Karate Framework
 
 # Karate for API Testing
+
+## Documentation
+https://github.com/karatelabs/karate#index
+
 
 ## Requirement
 * Java Development Kit
 * Maven
+
 
 ## Running Tests
 * Clone the repository from your fork to this directory
@@ -19,7 +23,7 @@ API Automation using Karate Framework
 
 
 ## Test Report
-* Test report automatically generated on `target` folder after finished the test execution
-* See test report from `target/karate-reports/karate-summary.html` for the Karate default report
-* Also, See the test result that used cucumber report from `target/cucumber-html-reports/overview-features.html` on your browser
+* When the test is completed, a test report is automatically generated in the 'target' folder.
+* See the test report from `target/karate-reports/karate-summary.html` for the Karate default report.
+* Also, see the test result that used the cucumber report from `target/cucumber-html-reports/overview-features.html` on your browser.
 
