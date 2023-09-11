@@ -17,7 +17,7 @@ https://github.com/karatelabs/karate#index
 * Run the tests with the karate runner classes under runner folder 'src/test/java/com/api/automation/runner'
 
   
-* https://github.com/karatelabs/karate#junit-5
+https://github.com/karatelabs/karate#junit-5
 
   
 * ----------------------------------------OR--------------------------------------
