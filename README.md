@@ -1,42 +1,34 @@
 # Booking API Automation using Karate Framework
 
-# Karate for API Testing
+## Introduction
+This repository contains automated tests for a Booking API using the Karate framework. Karate is a powerful tool for API testing, and this guide will help you get started with running the tests and generating reports.
 
-## Documentation
-https://github.com/karatelabs/karate#index
+## Prerequisites
+Before you begin, make sure you have the following prerequisites installed:
 
+- Java Development Kit
+- Maven
 
-## Requirement
-* Java Development Kit
-* Maven
+## Getting Started
+Follow these steps to start running the tests:
 
+1. Clone [this](https://github.com/dk241294/Booking/tree/main) repository to your local machine.
 
-## Running Tests
-* Clone the repository from your fork to this directory
-* Open the project using any text editor or Java IDE
-* Run the tests with the karate runner classes under runner folder 'src/test/java/com/api/automation/runner'
+2. Open the project using a text editor or Java IDE of your choice.
 
-  
-https://github.com/karatelabs/karate#junit-5
+3. Run the tests using the Karate runner classes located under the 'src/test/java/com/api/automation/runner' folder.
 
-  
- ----------------------------------------OR--------------------------------------
+   For JUnit 5 integration, refer to [Karate's JUnit 5 documentation](https://github.com/karatelabs/karate#junit-5) for details on how to run tests using JUnit 5.
 
-  
-* or install the karate plugin from the marketplace
-  
- <img width="981" alt="Screenshot 2023-09-11 at 7 35 05 PM" src="https://github.com/dk241294/Booking/assets/49711366/4ea2ed0f-4443-43ae-abaf-64af634f24e6">
-* Go to the feature file and click the run button
+   Alternatively, you can also install the Karate plugin from your IDE's marketplace, open any feature file, and click the run button.
 
-<img width="1485" alt="Screenshot 2023-09-11 at 7 36 13 PM" src="https://github.com/dk241294/Booking/assets/49711366/e71750ee-0c7b-4f16-a2aa-caeb8dc6a7b8">
+## Test Reports
+After running the tests, a test report is automatically generated in the 'target' folder. Here's how you can access different reports:
 
+- Karate Default Report: View the Karate default report by opening 'target/karate-reports/karate-summary.html' in your browser.
 
+- Cucumber Report: If you prefer Cucumber-style reports, you can find them in 'target/cucumber-html-reports/overview-features.html'. Open this file in your browser to see the test results in a Cucumber-style format.
 
-## Test Report  
-
-https://github.com/karatelabs/karate#test-reports
-
-* When the test is completed, a test report is automatically generated in the 'target' folder.
-* See the test report from `target/karate-reports/karate-summary.html` for the Karate default report.
-* Also, see the test result that used the cucumber report from `target/cucumber-html-reports/overview-features.html` on your browser.
+## Conclusion
+With the Karate framework, you can easily automate and test your Booking API. This readme provides a quick guide to get you started with running the tests and viewing the reports. For more detailed information, refer to the [Karate documentation](https://github.com/karatelabs/karate#index).
 
