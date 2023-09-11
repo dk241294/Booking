@@ -9,7 +9,7 @@ Before running the tests, ensure that you have the following prerequisites insta
 - Maven
 
 ## Running Tests
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine. (https://github.com/dk241294/Booking/tree/main)
 
 2. Open the project using your preferred text editor or Java IDE.
 
